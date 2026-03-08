@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Para Camila 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Para Camila 💜</h2>
+
+<div class="sobre" onclick="abrir()">
+    <div id="tapa" class="tapa"></div>
+</div>
+
+<div id="mensaje">
+
+Camila,
+
+Feliz Día de la Mujer 💜
+
+Hoy quiero recordarte lo especial que eres para mí.
+Eres una mujer increíble. Eres maravillosa, hermosa
+y simplemente ideal para mí.
+
+Admiro mucho tu forma de ser y la fuerza con la que
+has sabido sobrellevar todo lo que te ha pasado este año.
+Desde todo el tiempo que llevo conociéndote,
+he podido ver lo especial que eres
+y lo hermosa que es tu forma de ser.
+
+Hoy quise prepararte este pequeño presente,
+porque de una u otra manera quería entregarte algo.
+Tal vez no sea un regalo grande,
+pero está hecho con cariño y pensando en ti.
+
+Espero que te guste,
+y que cuando lo veas recuerdes lo importante
+y especial que eres para mí.
+
+Te amo muchísimo, mi amor.
+Te amo, te amo. ❤️
+
+</div>
+
+<script>
+
+function abrir(){
+
+document.getElementById("tapa").classList.add("abierto");
+document.getElementById("mensaje").style.opacity="1";
+
+for(let i=0;i<25;i++){
+
+let estrella = document.createElement("div");
+estrella.className="estrella";
+estrella.innerHTML="✨";
+
+estrella.style.left=Math.random()*100+"vw";
+estrella.style.top=Math.random()*100+"vh";
+
+document.body.appendChild(estrella);
+
+setTimeout(()=>{estrella.remove();},2000);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
