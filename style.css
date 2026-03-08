@@ -1,0 +1,65 @@
+body{
+background:#1a1a2e;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-family:Arial;
+color:white;
+overflow:hidden;
+}
+
+/* SOBRE */
+
+.sobre{
+width:220px;
+height:150px;
+background:#ff4f81;
+position:relative;
+cursor:pointer;
+border-radius:5px;
+}
+
+.tapa{
+position:absolute;
+width:0;
+height:0;
+border-left:110px solid transparent;
+border-right:110px solid transparent;
+border-bottom:75px solid #ff7aa5;
+top:-75px;
+transition:1s;
+transform-origin:bottom;
+}
+
+.abierto{
+transform:rotateX(180deg);
+}
+
+/* CARTA */
+
+#mensaje{
+margin-top:40px;
+max-width:500px;
+text-align:center;
+font-size:22px;
+opacity:0;
+transition:1s;
+line-height:1.6;
+}
+
+/* ESTRELLAS */
+
+.estrella{
+position:absolute;
+color:#ffd700;
+font-size:18px;
+animation:brillo 2s linear infinite;
+}
+
+@keyframes brillo{
+0%{opacity:0; transform:translateY(0);}
+50%{opacity:1;}
+100%{opacity:0; transform:translateY(-80px);}
+}
